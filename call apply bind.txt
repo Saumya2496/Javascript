@@ -26,12 +26,19 @@ let name2={
 fullname.call(name2);
 fullname.call(name, "meerut");
 
+
+
+
+_________________________________________________________________________________________________________________________________
+
 APPLY-----
 
 in above example if number of passes argument got increased then we may use apply method in wjhich we can pass list of argument 
 the call() method takes arguments separately.
 
 The apply() method takes arguments as an array.
+
+it will take second argument as array..
 
 
 let name={
@@ -54,7 +61,7 @@ let name2={
 fullname.apply(name, ["meerut", "uttarpradesh"]);
 
 
-
+_______________________________________________________________________________________________
 
 BIND()----------------
 
