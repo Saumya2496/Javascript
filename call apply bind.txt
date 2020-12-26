@@ -3,33 +3,57 @@
 
 call----------
 
+With the call() method, you can write a method that can be used on different objects.
 
 
-//Demo with javascript .call()
 
-var obj = {name:"Niladri"};
+/let name={
+  first_name:"saumya",
+  last_name:"sharma",
+}
 
-var greeting = function(a,b,c){
-    return "welcome "+this.name+" to "+a+" "+b+" in "+c;
-};
+let fullname=function(hometown){
+  console.log(this.first_name+ " " + this.last_name+ " "+ + "from"+ hometown);
+}
 
-console.log(greeting.call(obj,"Newtown","KOLKATA","WB"));
-// returns output as welcome Niladri to Newtown KOLKATA in WB
 
+
+let name2={
+  first_name:"peter",
+  last_name:"smith",
+}
+
+fullname.call(name2);
+fullname.call(name, "meerut");
 
 APPLY-----
 
+in above example if number of passes argument got increased then we may use apply method in wjhich we can pass list of argument 
+the call() method takes arguments separately.
 
-var obj = {name:"Niladri"};
+The apply() method takes arguments as an array.
 
-var greeting = function(a,b,c){
-    return "welcome "+this.name+" to "+a+" "+b+" in "+c;
-};
 
-// array of arguments to the actual function
-var args = ["Newtown","KOLKATA","WB"];  
-console.log("Output using .apply() below ")
-console.log(greeting.apply(obj,args));
+let name={
+  first_name:"saumya",
+  last_name:"sharma",
+}
+
+let fullname=function(hometown, stat){
+  console.log(this.first_name+ " " + this.last_name+ " "+  "from" +"  "+ hometown);
+}
+
+
+
+let name2={
+  first_name:"peter",
+  last_name:"smith",
+}
+
+
+fullname.apply(name, ["meerut", "uttarpradesh"]);
+
+
 
 
 BIND()----------------
