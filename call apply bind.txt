@@ -59,21 +59,32 @@ fullname.apply(name, ["meerut", "uttarpradesh"]);
 BIND()----------------
 
 
-var obj = {name:"Niladri"};
+it gives you a copy which can be invoke later.
 
-var greeting = function(a,b,c){
-    return "welcome "+this.name+" to "+a+" "+b+" in "+c;
-};
+let name={
+  first_name:"saumya",
+  last_name:"sharma",
+}
 
-//creates a bound function that has same body and parameters 
-var bound = greeting.bind(obj); 
+let fullname=function(hometown, stat){
+  console.log(this.first_name+ " " + this.last_name+ " "+  "from" +"  "+ hometown);
+}
 
 
-console.dir(bound); ///returns a function
 
-console.log("Output using .bind() below ");
+let name2={
+  first_name:"peter",
+  last_name:"smith",
+}
 
-console.log(bound("Newtown","KOLKATA","WB")); //call the bound function
+
+fullname.apply(name, ["meerut", "uttarpradesh"]);
+
+let priontmyname= fullname.bind(name, "meerut")
+console.log(priontmyname); //  it will give the function because printmyname is a function
+priontmyname();// we have invoked printmyname function over here ...now iut will give complete output.
+
+
 
 
 
