@@ -1,0 +1,77 @@
+difference between expression and statement is hoisting..
+we cancall a();
+but cant call b()befir initalizing
+
+
+//function statement also called function declaration.
+
+
+function a(){
+console.log("a called");
+}
+
+
+
+*********************************
+//function expression
+
+var b = function (){
+
+console.log("b is called");
+}
+
+
+
+*********************************
+
+
+//Anonymous function
+
+function without name is an anonymous function.
+anonymous function are used when the funcytions are used as values
+
+function(){
+
+
+}
+
+
+****************************************
+//Named function expression
+
+var b = function abc(){ // because of abc it is named function
+ console.log("b called"); 
+}
+
+
+
+if i call abc() this will throw an error 
+
+
+
+*******************************************
+
+//Difference between Parameters & Arguments
+
+var b = function(param1, param2){ //parameters  (the labels and identifiers which get arguments values is known as parametres)
+console.log("b is called");
+}
+
+
+b(1,2) // this is an argument (the values which we passes inside an function is known as arguments)
+
+
+*******************************************
+//first class function (ability to be used like values)
+
+the ability to use the fucntion as values  and can be passed as an argument
+and can be returned from the functuions is known as first class function
+
+
+
+
+
+
+
+
+//arrow function
