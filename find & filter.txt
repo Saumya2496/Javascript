@@ -1,0 +1,48 @@
+
+//enter an array
+const data =[1,2,12,14,130,44];
+
+//check for element >12
+const found= data.find(element => element>12);
+
+
+console.log(found);
+
+output - 14 
+so it will give output as 14 in every execution.
+
+so to overcome this problem we are going to use filter method()..
+******************************************************************************
+
+const data =[1,2,12,14,130,44];
+
+const found= data.filter(element => element>12);
+
+console.log(found);
+
+so it will give output as [14,44,130]
+
+
+************************************************
+
+
+
+
+const data =[
+  
+  {name:'saumya' , age:24},
+  {name: 'somya' ,  age:25},
+  {name: 'null', age:undefined},
+  {name:'null', age:undefined},
+  {name:'sowmya', age: undefined}
+  
+];
+
+const found= data.filter((element)=> {
+  
+  return element.age != undefined;
+  
+});
+
+console.log(found);
+
