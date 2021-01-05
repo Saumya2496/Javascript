@@ -1,0 +1,24 @@
+
+insert an element in an array 
+
+
+function insertelement(){
+  
+const arr= [1,2,3,4,5,6];
+  
+  let index=3;
+  let element = 8;
+  
+  const array= arr.splice(index, 0, element);
+ 
+   console.log(arr)
+
+
+}
+
+insertelement();
+
+
+
+*****************************************************************
+
