@@ -46,3 +46,20 @@ const found= data.filter((element)=> {
 
 console.log(found);
 
+
+*********************************************8for in:::----------
+
+const data =['saumya','somya', 'saumya1'];
+
+for(let element in data){
+  console.log(element);
+}
+
+
+
+in me index ki value nikalne k liy
+
+agr hme array ki values chahiy then we can use 
+
+for(let element of data){
+  console.log(element);
