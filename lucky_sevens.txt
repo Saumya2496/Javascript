@@ -1,0 +1,22 @@
+LUCKY SEVENS:--
+
+
+function lucky_sevens(arr){
+  
+  if (arr.length <3){
+    return "not possible";
+  }
+  
+  
+    
+    for(var i=2; i<arr.length; i++){
+      if (arr[i]+ arr[i-1]+ arr[i-2] ===7){
+        return true;
+      
+    }
+  }
+  return False;
+}
+
+var a=lucky_sevens([2,3,4,1,2,6]);
+console.log(a);
