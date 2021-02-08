@@ -1,0 +1,70 @@
+Var functional scope:--
+
+var win ="India"
+
+if (true){
+  
+  var win="indonasia";
+  console.log(win);
+}
+
+console.log(win);
+
+
+***************************
+
+ex by using let var 
+
+var win ="India"
+
+if (true){
+  
+  let  win="indonasia";
+  console.log(win);
+}
+
+console.log(win);
+
+******************
+
+let win ="India"
+
+if (true){
+  
+  let  win="indonasia";
+  console.log(win);
+}
+
+console.log(win);
+
+***************************
+
+Arrow functional
+
+let a =10;
+let b =20;
+
+const sum = () => {
+  
+  return a+b;
+}
+console.log(sum())
+
+___________________________
+
+object dstructuring
+
+
+let[top1, top2, top3, top4]=["javascript", "react", "c", "html"]
+
+console.log(`my fav programming lang is ${top1}` );
+
+or
+
+const myprograming= ["javascript", "react", "c", "html"]
+
+let[top1, top2, top3, top4]= myprograming;
+
+console.log(`my fav programming lang is ${top1}` );
+
+
