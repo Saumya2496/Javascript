@@ -1,20 +1,20 @@
-<p id ="apiindia"></p>
+<p id ="apidom"></p>
 <script>
 
-fetch('https://api.covid19api.com/summary').then ((apidata) =>{
+fetch('https://api.covid19api.com/summary').then((apidata)=>{
     console.log(apidata);
-    return apidata.json()
+    return apidata.json();
 
 }).then((actualdata)=>{
-    //console.log(actualdata);
-    const mydata=actualdata.Countries[76].Country;
-    //document.getElementById("apiindia").innerHTML = `the name of the Country is ${mydata.Country} `  ;
+    //console.log(actualdata.Countries[76].Country);
+    const mydata=actualdata.Countries[76];
+    //console.log(`the name of the Country is ${mydata}`);
+    document.getElementById('apidom').innerHTML= `The name of the Country is ${mydata.Country}, and total confirmed caes are ${mydata.TotalConfirmed}`
 
 
 }).catch((error)=>{
-    console.log(error)
-})
-
+    console.log(error);
+});
 
 
 </script>
