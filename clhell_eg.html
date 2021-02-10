@@ -1,0 +1,70 @@
+<script>
+
+/*const getRollNo =()=>{
+
+    setTimeout (()=>{
+        console.log("API is getting roll no");
+        let roll_no=[1,2,3,4,5];
+        console.log(roll_no);
+
+        setTimeout ((roll_no)=>{
+            const Biodata={
+                name: "saumya",
+                Age: 24
+            }
+            console.log(`${Biodata.name} and age is ${Biodata.Age}`)
+
+            setTimeout = ((name)=>{
+                Biodata.gender= "female";
+                console.log(`${Biodata.name} and age is ${Biodata.Age} and gender is ${Biodata.gender}`)
+            },2000, Biodata.name )
+        },2000, roll_no[1])
+    },2000)
+}
+
+
+getRollNo();*/
+
+
+
+const pobj1= new Promise((resolve, reject)=>{
+
+    setTimeout(()=>{
+        let roll_no=[1,2,3,4,5];
+        resolve(roll_n0);
+        reject("error while communication with api")
+    },2000)
+});
+//promise consume
+
+const getBiodata = ((indexs)=>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            const Biodata= {
+            name:"saumya",
+            age:24
+        }
+        resolve(`my roll no is ${indexs} name is ${Biodata.name}`)
+        }, 2000, indexs);
+    })
+})
+
+
+pobj1.then((rollno)=>{
+    console.log(rollno)
+    getBiodata(roll_no[1]).then((kuchbhi)=>{
+        console.log(kuchbhi)
+    })
+}).catch((error)=>{
+
+    console.log(error);
+});
+
+
+
+
+
+
+
+
+</script>
