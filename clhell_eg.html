@@ -50,15 +50,17 @@ const getBiodata = ((indexs)=>{
 })
 
 
-pobj1.then((rollno)=>{
+pobj1.then((rollno)=>(
     console.log(rollno)
     getBiodata(roll_no[1]).then((kuchbhi)=>{
         console.log(kuchbhi)
     })
 }).catch((error)=>{
 
-    console.log(error);
+    console.log(error)
 });
+
+
 
 
 
