@@ -8,6 +8,8 @@ With the call() method, you can write a method that can be used for different ob
 
 
 /let name={
+
+
   first_name:"saumya",
   last_name:"sharma",
 }
